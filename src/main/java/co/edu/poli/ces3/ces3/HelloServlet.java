@@ -1,6 +1,7 @@
 package co.edu.poli.ces3.ces3;
 
 import java.io.*;
+import javax.servlet.ServletOutputStream;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 
@@ -20,6 +21,7 @@ public class HelloServlet extends HttpServlet {
         out.println("<html><body>");
         out.println("<h1>" + message + "</h1>");
         out.println("</body></html>");
+        System.out.println("Version con developer");
     }
 
     public void destroy() {
